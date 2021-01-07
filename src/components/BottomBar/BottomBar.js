@@ -9,7 +9,7 @@ const BottomBarWrapper = styled.div`
     column-gap: 2.8rem;
     padding-inline-start: 2.8rem;
     background-color: white;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 ${({theme}) => theme.colors.shadow};
 `
 
 const SocialIcons = styled.div`

@@ -1,6 +1,6 @@
 import "modern-normalize/modern-normalize.css"
 
-import Footer from "components/Footer"
+import BottomBar from "components/BottomBar"
 import Header from "components/Header"
 import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
@@ -12,7 +12,7 @@ const StyledLayout = styled.div`
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
 `
 
 const Layout = ({children}) => (
@@ -23,7 +23,7 @@ const Layout = ({children}) => (
             <StyledLayout>
                 <Header />
                 <Container>{children}</Container>
-                <Footer />
+                <BottomBar />
             </StyledLayout>
         </>
     </ThemeProvider>

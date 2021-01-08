@@ -1,31 +1,21 @@
 import "modern-normalize/modern-normalize.css"
 
-import BottomBar from "components/BottomBar"
-import Header from "components/Header"
 import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
-import Container from "styles/Container"
 import GlobalStyles from "styles/GlobalStyles"
 import theme from "styles/theme"
 
-const StyledLayout = styled.div`
+const LayoutWrapper = styled.div`
     height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-family: Montserrat, sans-serif;
+    width: 100vw;
 `
 
 const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
-        <>
+        <LayoutWrapper>
             <GlobalStyles />
-
-            <StyledLayout>
-                <Header />
-                <Container>{children}</Container>
-                <BottomBar />
-            </StyledLayout>
-        </>
+            {children}
+        </LayoutWrapper>
     </ThemeProvider>
 )
 

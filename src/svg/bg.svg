@@ -4,6 +4,7 @@
     height="510"
     fill="none"
     viewBox="0 0 512 510"
+    aria-label="bg"
 >
     <path
         fill="#000"

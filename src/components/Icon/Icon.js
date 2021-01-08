@@ -1,9 +1,10 @@
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Github from "svg/github.svg"
-import Instagram from "svg/instagram.svg"
-import Twitter from "svg/twitter.svg"
-import Youtube from "svg/youtube.svg"
+
+import Github from "../../svg/github.svg"
+import Instagram from "../../svg/instagram.svg"
+import Twitter from "../../svg/twitter.svg"
+import Youtube from "../../svg/youtube.svg"
 
 const IconWrapper = styled.span`
     height: 40px;

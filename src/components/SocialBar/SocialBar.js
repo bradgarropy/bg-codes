@@ -1,21 +1,21 @@
 import Socials from "components/Socials"
 import styled from "styled-components"
 
-const BottomBarWrapper = styled.div`
+const SocialBarWrapper = styled.div`
     height: 5rem;
-    padding-inline: 2.8rem;
+    padding-inline: 2rem;
     background-color: ${({theme}) => theme.colors.white};
+    justify-self: center;
     box-shadow: 0 0 20px 0 ${({theme}) => theme.colors.shadow};
     display: grid;
-    align-content: center;
 `
 
-const BottomBar = () => {
+const SocialBar = () => {
     return (
-        <BottomBarWrapper>
+        <SocialBarWrapper>
             <Socials />
-        </BottomBarWrapper>
+        </SocialBarWrapper>
     )
 }
 
-export default BottomBar
+export default SocialBar

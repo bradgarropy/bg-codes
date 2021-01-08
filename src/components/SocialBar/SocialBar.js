@@ -2,10 +2,14 @@ import Socials from "components/Socials"
 import styled from "styled-components"
 
 const SocialBarWrapper = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     height: 5rem;
-    padding-inline: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
     background-color: ${({theme}) => theme.colors.white};
-    justify-self: center;
     box-shadow: 0 0 20px 0 ${({theme}) => theme.colors.shadow};
     display: grid;
 `

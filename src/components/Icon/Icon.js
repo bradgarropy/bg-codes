@@ -1,48 +1,40 @@
 import PropTypes from "prop-types"
 import styled from "styled-components"
-
-import Github from "../../svg/github.svg"
-import Instagram from "../../svg/instagram.svg"
-import Twitter from "../../svg/twitter.svg"
-import Youtube from "../../svg/youtube.svg"
+import Github from "svg/github.svg"
+import Instagram from "svg/instagram.svg"
+import Twitter from "svg/twitter.svg"
+import Youtube from "svg/youtube.svg"
 
 const IconWrapper = styled.span`
     height: 40px;
 `
 
 const Icon = ({icon}) => {
+    let component
+
     switch (icon) {
         case "github":
-            return (
-                <IconWrapper>
-                    <Github />
-                </IconWrapper>
-            )
+            component = <Github />
+            break
 
         case "instagram":
-            return (
-                <IconWrapper>
-                    <Instagram />
-                </IconWrapper>
-            )
+            component = <Instagram />
+            break
 
         case "twitter":
-            return (
-                <IconWrapper>
-                    <Twitter />
-                </IconWrapper>
-            )
+            component = <Twitter />
+            break
 
         case "youtube":
-            return (
-                <IconWrapper>
-                    <Youtube />
-                </IconWrapper>
-            )
+            component = <Youtube />
+            break
 
         default:
-            return null
+            component = null
+            break
     }
+
+    return <IconWrapper>{component}</IconWrapper>
 }
 
 Icon.propTypes = {

@@ -28,13 +28,9 @@ const Icon = ({icon}) => {
         case "youtube":
             component = <Youtube />
             break
-
-        default:
-            component = null
-            break
     }
 
-    return <IconWrapper>{component}</IconWrapper>
+    return <IconWrapper aria-label={icon}>{component}</IconWrapper>
 }
 
 Icon.propTypes = {

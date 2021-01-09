@@ -1,7 +1,17 @@
 import SocialBar from "components/SocialBar"
 import {render, screen} from "test-utils/render"
 
-test("renders", () => {
+const socials = ["github", "instagram", "twitter", "youtube"]
+
+test("shows social links", () => {
     render(<SocialBar />)
-    expect(screen.getByText("SocialBar"))
+
+    socials.forEach(social => {
+        expect(screen.getByLabelText(social))
+    })
+})
+
+test("shows handle", () => {
+    render(<SocialBar />)
+    expect(screen.getByText("@bradgarropy"))
 })

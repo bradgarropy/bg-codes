@@ -1,7 +1,15 @@
 import SocialLink from "components/SocialLink"
 import {render, screen} from "test-utils/render"
 
-test("renders", () => {
-    render(<SocialLink />)
-    expect(screen.getByText("SocialLink"))
+const platforms = ["github", "instagram", "twitter", "youtube"]
+
+test("shows social links", () => {
+    platforms.forEach(platform => {
+        render(<SocialLink platform={platform} />)
+
+        expect(screen.getByLabelText(platform).parentElement).toHaveAttribute(
+            "href",
+            `https://${platform}.com/bradgarropy`,
+        )
+    })
 })

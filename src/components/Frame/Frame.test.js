@@ -1,7 +1,6 @@
 import Frame from "components/Frame"
-import {render, screen} from "test-utils/render"
+import {render} from "test-utils/render"
 
-test("renders", () => {
+test("shows frame", () => {
     render(<Frame />)
-    expect(screen.getByText("Frame"))
 })

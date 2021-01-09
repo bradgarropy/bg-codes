@@ -8,7 +8,5 @@ test("shows layout", () => {
         </Layout>,
     )
 
-    expect(screen.getByText("HEADER"))
     expect(screen.getByText("test"))
-    expect(screen.getByText("@bradgarropy"))
 })

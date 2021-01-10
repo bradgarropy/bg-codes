@@ -1,16 +1,8 @@
-import SEO from "@bradgarropy/gatsby-plugin-seo"
+import {navigate} from "gatsby"
 
 const IndexPage = () => {
-    return (
-        <>
-            <SEO
-                title="gatsby starter"
-                description="Welcome to gatsby-starter!"
-            />
-
-            <h1>home</h1>
-        </>
-    )
+    navigate("/brb", {replace: true})
+    return null
 }
 
 export default IndexPage

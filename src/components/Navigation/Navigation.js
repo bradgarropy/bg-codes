@@ -10,6 +10,7 @@ const StyledNavigation = styled.div`
     column-gap: 2.5rem;
     padding: 1rem 2rem;
     opacity: 0%;
+    transition: all 300ms ease-out;
 
     &:hover {
         opacity: 100%;

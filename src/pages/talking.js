@@ -3,7 +3,7 @@ import SocialBar from "components/SocialBar"
 import Video from "components/Video"
 import styled from "styled-components"
 
-const StyledVideo = styled(Video)`
+const HostVideo = styled(Video)`
     position: absolute;
     top: 50%;
     left: 50%;
@@ -14,7 +14,7 @@ const TalkingPage = () => {
     return (
         <>
             <Background />
-            <StyledVideo width="68.75vw" />
+            <HostVideo width="68.75vw" />
             <SocialBar />
         </>
     )

@@ -1,4 +1,5 @@
 import BottomBar from "components/BottomBar"
+import Handle from "components/Handle"
 import Video from "components/Video"
 import {useGuest} from "hooks"
 import PropTypes from "prop-types"
@@ -26,27 +27,23 @@ const HostVideo = styled(Video)`
     z-index: 1;
 `
 
-const Handle = styled.div`
+const StyledHandle = styled(Handle)`
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 3.6rem;
-    background-color: ${({theme}) => theme.colors.white};
-    padding: 1.2rem 2.4rem;
 `
 
 const PairingPage = () => {
     const guest = useGuest()
-    const handle = `@${guest}`
 
     return (
         <>
             <GuestVideo width="31.25vw">
-                <Handle>{handle}</Handle>
+                <StyledHandle handle={guest} />
             </GuestVideo>
 
             <HostVideo width="31.25vw">
-                <Handle>@bradgarropy</Handle>
+                <StyledHandle />
             </HostVideo>
 
             <BottomBar />

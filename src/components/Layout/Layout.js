@@ -1,5 +1,6 @@
 import "modern-normalize/modern-normalize.css"
 
+import Navigation from "components/Navigation"
 import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
 import GlobalStyles from "styles/GlobalStyles"
@@ -14,6 +15,7 @@ const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
         <LayoutWrapper>
             <GlobalStyles />
+            <Navigation />
             {children}
         </LayoutWrapper>
     </ThemeProvider>

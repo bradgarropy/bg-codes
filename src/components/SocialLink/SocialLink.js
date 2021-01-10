@@ -5,6 +5,10 @@ import styled from "styled-components"
 const SocialLinkWrapper = styled.a`
     height: 40px;
     color: ${({theme}) => theme.colors.black};
+
+    &:hover {
+        color: ${({theme}) => theme.colors.purple};
+    }
 `
 
 const SocialLink = ({platform}) => {

@@ -2,12 +2,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const VideoWrapper = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: ${({width}) => width};
-    background-color: ${({theme}) => theme.colors.white};
+    background-color: ${({theme}) => theme.colors.purple};
     border: 1.8rem solid ${({theme}) => theme.colors.white};
     box-shadow: 0 0 20px 0 ${({theme}) => theme.colors.shadow};
 
@@ -27,16 +23,16 @@ const Frame = styled.div`
     left: 0;
 `
 
-const Video = ({width = "68.75vw"}) => {
+const Video = ({width = "68.75vw", ...props}) => {
     return (
-        <VideoWrapper width={width}>
+        <VideoWrapper width={width} {...props}>
             <Frame />
         </VideoWrapper>
     )
 }
 
 Video.propTypes = {
-    width: PropTypes.string.isRequired,
+    width: PropTypes.string,
 }
 
 export default Video

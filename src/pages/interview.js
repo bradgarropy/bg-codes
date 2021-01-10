@@ -1,4 +1,4 @@
-const interview = () => {
+const InterviewPage = () => {
     return (
         <div>
             <h1>interview</h1>
@@ -6,4 +6,4 @@ const interview = () => {
     )
 }
 
-export default interview
+export default InterviewPage

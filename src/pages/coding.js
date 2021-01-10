@@ -2,7 +2,7 @@ import BottomBar from "components/BottomBar"
 import Video from "components/Video"
 import styled from "styled-components"
 
-const StyledVideo = styled(Video)`
+const HostVideo = styled(Video)`
     position: absolute;
     right: 0;
     bottom: 5rem;
@@ -13,13 +13,13 @@ const StyledVideo = styled(Video)`
     z-index: 1;
 `
 
-const coding = () => {
+const CodingPage = () => {
     return (
         <>
-            <StyledVideo width="31.25vw" />
+            <HostVideo width="31.25vw" />
             <BottomBar />
         </>
     )
 }
 
-export default coding
+export default CodingPage

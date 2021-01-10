@@ -15,24 +15,17 @@ const VideoWrapper = styled.div`
     }
 `
 
-const Frame = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-`
-
-const Video = ({width = "68.75vw", ...props}) => {
+const Video = ({width = "68.75vw", children, ...props}) => {
     return (
         <VideoWrapper width={width} {...props}>
-            <Frame />
+            {children}
         </VideoWrapper>
     )
 }
 
 Video.propTypes = {
     width: PropTypes.string,
+    children: PropTypes.node,
 }
 
 export default Video

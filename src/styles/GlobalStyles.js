@@ -5,6 +5,10 @@ const GlobalStyles = createGlobalStyle`
         font-size: 10px;
         background-color: ${({theme}) => theme.colors.purple}
     }
+
+    body {
+        font-family: Montserrat, sans-serif;
+    }
 `
 
 export default GlobalStyles

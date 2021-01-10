@@ -1,4 +1,4 @@
-const brb = () => {
+const BRBPage = () => {
     return (
         <div>
             <h1>brb</h1>
@@ -6,4 +6,4 @@ const brb = () => {
     )
 }
 
-export default brb
+export default BRBPage

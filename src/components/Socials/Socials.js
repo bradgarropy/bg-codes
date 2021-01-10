@@ -19,7 +19,6 @@ const SocialIcons = styled.div`
 
 const Handle = styled.span`
     font-size: 3.2rem;
-    font-family: Montserrat, sans-serif;
 `
 
 const Socials = () => {

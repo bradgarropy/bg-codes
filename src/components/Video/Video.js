@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const VideoWrapper = styled.div`
     width: ${({width}) => width};
+    box-sizing: content-box;
     border: 1.8rem solid ${({theme}) => theme.colors.white};
     box-shadow: 0 0 20px 0 ${({theme}) => theme.colors.shadow};
 

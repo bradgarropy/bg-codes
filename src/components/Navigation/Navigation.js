@@ -2,7 +2,7 @@ import {Link} from "gatsby"
 import {useEffect, useState} from "react"
 import styled from "styled-components"
 
-const StyledNavigation = styled.div`
+const StyledNavigation = styled.nav`
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@ const Navigation = () => {
     }, [])
 
     return (
-        <StyledNavigation show={isVisible}>
+        <StyledNavigation role="navigation" show={isVisible}>
             <NavigationLink to="/brb">brb</NavigationLink>
             <NavigationLink to="/talking">talking</NavigationLink>
             <NavigationLink to="/sharing">sharing</NavigationLink>

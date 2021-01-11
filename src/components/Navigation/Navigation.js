@@ -1,4 +1,5 @@
 import {Link} from "gatsby"
+import {useEffect, useState} from "react"
 import styled from "styled-components"
 
 const StyledNavigation = styled.div`
@@ -9,12 +10,8 @@ const StyledNavigation = styled.div`
     grid-auto-flow: column;
     column-gap: 2.5rem;
     padding: 1rem 2rem;
-    opacity: 0%;
     transition: all 300ms ease-out;
-
-    &:hover {
-        opacity: 100%;
-    }
+    visibility: ${({show}) => (show ? "visible" : "hidden")};
 `
 
 const NavigationLink = styled(Link)`
@@ -28,8 +25,24 @@ const NavigationLink = styled(Link)`
 `
 
 const Navigation = () => {
+    const [isVisible, setIsVisible] = useState(false)
+
+    const onKeyDown = event => {
+        if (event.code === "ControlLeft") {
+            setIsVisible(isVisible => !isVisible)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("keydown", onKeyDown)
+
+        return () => {
+            window.removeEventListener("keydown", onKeyDown)
+        }
+    }, [])
+
     return (
-        <StyledNavigation>
+        <StyledNavigation show={isVisible}>
             <NavigationLink to="/brb">brb</NavigationLink>
             <NavigationLink to="/talking">talking</NavigationLink>
             <NavigationLink to="/sharing">sharing</NavigationLink>

@@ -1,1 +1,1 @@
-export {default as useGuest} from "hooks/useGuest"
+export {default as useStream} from "hooks/useStream"

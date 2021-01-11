@@ -1,7 +1,7 @@
 import BottomBar from "components/BottomBar"
 import Handle from "components/Handle"
 import Video from "components/Video"
-import {useGuest} from "hooks"
+import {useStream} from "hooks"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
@@ -34,12 +34,12 @@ const StyledHandle = styled(Handle)`
 `
 
 const PairingPage = () => {
-    const guest = useGuest()
+    const {stream} = useStream()
 
     return (
         <>
             <GuestVideo width="31.25vw">
-                <StyledHandle handle={guest} />
+                <StyledHandle handle={stream?.guest} />
             </GuestVideo>
 
             <HostVideo width="31.25vw">

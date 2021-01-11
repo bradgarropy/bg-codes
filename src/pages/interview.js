@@ -2,7 +2,7 @@ import Background from "components/Background"
 import Handle from "components/Handle"
 import SocialBar from "components/SocialBar"
 import Video from "components/Video"
-import {useGuest} from "hooks"
+import {useStream} from "hooks"
 import styled from "styled-components"
 
 const Videos = styled.div`
@@ -41,7 +41,7 @@ const GuestHandle = styled(Handle)`
 `
 
 const InterviewPage = () => {
-    const guest = useGuest()
+    const {stream} = useStream()
 
     return (
         <>
@@ -52,7 +52,7 @@ const InterviewPage = () => {
                 <HostHandle />
 
                 <GuestVideo width="42.1875vw" />
-                <GuestHandle handle={guest} />
+                <GuestHandle handle={stream?.guest} />
             </Videos>
 
             <SocialBar />

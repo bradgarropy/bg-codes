@@ -17,7 +17,7 @@ const StyledNavigation = styled.nav`
 const NavigationLink = styled(Link)`
     font-size: 4rem;
     text-decoration: none;
-    color: ${({theme}) => theme.colors.white};
+    color: ${({theme}) => theme.colors.black};
 
     &:hover {
         text-decoration: underline;

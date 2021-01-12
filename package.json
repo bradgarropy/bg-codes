@@ -1,15 +1,17 @@
 {
     "name": "bg-codes",
     "version": "0.0.1",
-    "description": "🥂 the great gatsby starter",
+    "description": "🎥 bg codes twitch overlays",
     "keywords": [
         "gatsby",
         "react",
         "styled-components",
         "prettier",
-        "eslint"
+        "eslint",
+        "firebase",
+        "twitch"
     ],
-    "homepage": "https://github.com/bradgarropy/bg-codes",
+    "homepage": "https://bg-codes.netlify.app",
     "bugs": {
         "url": "https://github.com/bradgarropy/bg-codes/issues"
     },
@@ -40,10 +42,7 @@
         "firebase": "^8.2.2",
         "gatsby": "^2.29.1",
         "gatsby-plugin-catch-links": "^2.7.0",
-        "gatsby-plugin-google-analytics": "^2.8.0",
         "gatsby-plugin-layout": "^1.7.0",
-        "gatsby-plugin-manifest": "^2.9.0",
-        "gatsby-plugin-offline": "^3.7.0",
         "gatsby-plugin-react-helmet": "^3.7.0",
         "gatsby-plugin-react-svg": "^3.0.0",
         "gatsby-plugin-styled-components": "^3.7.0",

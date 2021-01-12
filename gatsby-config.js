@@ -4,40 +4,24 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
-        url: "https://the-great-gatsby-starter.netlify.app",
-        title: "gatsby starter",
-        description: "🥂 the great gatsby starter",
-        keywords: ["gatsby", "react", "scss", "eslint"],
+        url: "https://bg-codes.netlify.app",
+        title: "bg codes",
+        description: "🎥 bg codes twitch overlay",
+        keywords: [
+            "gatsby",
+            "react",
+            "styled-components",
+            "prettier",
+            "eslint",
+            "firebase",
+            "twitch",
+        ],
         email: "bradgarropy@gmail.com",
         twitter: "bradgarropy",
     },
     plugins: [
         {
             resolve: "gatsby-plugin-react-helmet",
-        },
-        {
-            resolve: "gatsby-plugin-manifest",
-            options: {
-                name: "gatsby starter",
-                short_name: "gatsby starter",
-                start_url: "/",
-                background_color: "#ffffff",
-                theme_color: "#ffffff",
-                display: "minimal-ui",
-                icon: "static/favicon.png",
-            },
-        },
-        {
-            resolve: "gatsby-plugin-offline",
-        },
-        {
-            resolve: "gatsby-plugin-google-analytics",
-            options: {
-                trackingId: process.env.TRACKING_ID,
-                head: true,
-                anonymize: true,
-                respectDNT: false,
-            },
         },
         {
             resolve: "gatsby-plugin-web-font-loader",

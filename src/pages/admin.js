@@ -1,6 +1,7 @@
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
-import {useStream} from "hooks"
+import {navigate} from "gatsby"
+import {useAuth, useStream} from "hooks"
 import {useEffect, useState} from "react"
 import styled from "styled-components"
 
@@ -37,6 +38,8 @@ const Button = styled.button`
 `
 
 const AdminPage = () => {
+    const authCtx = useAuth()
+    console.log(authCtx.user)
     const streamCtx = useStream()
     const [stream, setStream] = useState({title: "", guest: ""})
 
@@ -56,6 +59,13 @@ const AdminPage = () => {
     const onSubmit = event => {
         event.preventDefault()
         streamCtx.updateStream(streamCtx.stream.id, stream)
+    }
+
+    if (
+        authCtx.user !== undefined &&
+        authCtx.user?.email !== "bradgarropy@gmail.com"
+    ) {
+        navigate("/login")
     }
 
     return (

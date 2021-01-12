@@ -1,5 +1,3 @@
-import "firebaseui/dist/firebaseui.css"
-
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
 import {useStream} from "hooks"

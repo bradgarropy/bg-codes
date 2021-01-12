@@ -1,6 +1,8 @@
 import "modern-normalize/modern-normalize.css"
+import "regenerator-runtime/runtime"
 
 import Navigation from "components/Navigation"
+import {StreamProvider} from "context"
 import PropTypes from "prop-types"
 import styled, {ThemeProvider} from "styled-components"
 import GlobalStyles from "styles/GlobalStyles"
@@ -13,11 +15,13 @@ const LayoutWrapper = styled.div`
 
 const Layout = ({children}) => (
     <ThemeProvider theme={theme}>
-        <LayoutWrapper>
-            <GlobalStyles />
-            <Navigation />
-            {children}
-        </LayoutWrapper>
+        <StreamProvider>
+            <LayoutWrapper>
+                <GlobalStyles />
+                <Navigation />
+                {children}
+            </LayoutWrapper>
+        </StreamProvider>
     </ThemeProvider>
 )
 

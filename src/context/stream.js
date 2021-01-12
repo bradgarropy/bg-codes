@@ -1,6 +1,6 @@
-import firebase from "gatsby-plugin-firebase"
 import PropTypes from "prop-types"
 import {createContext, useEffect, useState} from "react"
+import firebase from "utils/firebase"
 
 const StreamContext = createContext()
 

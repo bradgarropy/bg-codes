@@ -4,7 +4,8 @@ import BottomBar from "components/BottomBar"
 const SharingPage = () => {
     return (
         <>
-            <SEO title="🤲🏼 sharing" description="" />
+            <SEO title="🎥 bg codes twitch overlay" description="" />
+
             <BottomBar />
         </>
     )

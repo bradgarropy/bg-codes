@@ -46,7 +46,8 @@ const InterviewPage = () => {
 
     return (
         <>
-            <SEO title="🎙 interview" description="" />
+            <SEO title="🎥 bg codes twitch overlay" description="" />
+
             <Background />
 
             <Videos>

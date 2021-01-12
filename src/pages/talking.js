@@ -14,7 +14,8 @@ const HostVideo = styled(Video)`
 const TalkingPage = () => {
     return (
         <>
-            <SEO title="🎙 talking" description="" />
+            <SEO title="🎥 bg codes twitch overlay" description="" />
+
             <Background />
             <HostVideo width="68.75vw" />
             <SocialBar />

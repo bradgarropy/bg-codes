@@ -39,7 +39,7 @@ const PairingPage = () => {
 
     return (
         <>
-            <SEO title="💻 pairing" description="" />
+            <SEO title="🎥 bg codes twitch overlay" description="" />
 
             <GuestVideo width="31.25vw">
                 <StyledHandle handle={stream?.guest} />

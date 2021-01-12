@@ -17,7 +17,8 @@ const HostVideo = styled(Video)`
 const CodingPage = () => {
     return (
         <>
-            <SEO title="💻 coding" description="" />
+            <SEO title="🎥 bg codes twitch overlay" description="" />
+
             <HostVideo width="31.25vw" />
             <BottomBar />
         </>

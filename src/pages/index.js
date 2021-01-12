@@ -22,7 +22,8 @@ const Tagline = styled.span`
 const BRBPage = () => {
     return (
         <>
-            <SEO title="🚽 brb" description="" />
+            <SEO title="🎥 bg codes twitch overlay" description="" />
+
             <Background />
 
             <Hero>

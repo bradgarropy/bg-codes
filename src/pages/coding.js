@@ -1,3 +1,4 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import BottomBar from "components/BottomBar"
 import Video from "components/Video"
 import styled from "styled-components"
@@ -16,6 +17,7 @@ const HostVideo = styled(Video)`
 const CodingPage = () => {
     return (
         <>
+            <SEO title="💻 coding" description="" />
             <HostVideo width="31.25vw" />
             <BottomBar />
         </>

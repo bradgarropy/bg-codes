@@ -1,3 +1,4 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
 import Handle from "components/Handle"
 import SocialBar from "components/SocialBar"
@@ -45,6 +46,7 @@ const InterviewPage = () => {
 
     return (
         <>
+            <SEO title="🎙 interview" description="" />
             <Background />
 
             <Videos>

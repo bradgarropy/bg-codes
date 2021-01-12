@@ -1,3 +1,4 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import BottomBar from "components/BottomBar"
 import Handle from "components/Handle"
 import Video from "components/Video"
@@ -38,6 +39,8 @@ const PairingPage = () => {
 
     return (
         <>
+            <SEO title="💻 pairing" description="" />
+
             <GuestVideo width="31.25vw">
                 <StyledHandle handle={stream?.guest} />
             </GuestVideo>

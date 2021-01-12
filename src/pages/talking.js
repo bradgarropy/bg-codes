@@ -1,3 +1,4 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
 import SocialBar from "components/SocialBar"
 import Video from "components/Video"
@@ -13,6 +14,7 @@ const HostVideo = styled(Video)`
 const TalkingPage = () => {
     return (
         <>
+            <SEO title="🎙 talking" description="" />
             <Background />
             <HostVideo width="68.75vw" />
             <SocialBar />

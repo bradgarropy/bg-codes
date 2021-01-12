@@ -1,3 +1,4 @@
+import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
 import styled from "styled-components"
 
@@ -21,6 +22,7 @@ const Tagline = styled.span`
 const BRBPage = () => {
     return (
         <>
+            <SEO title="🚽 brb" description="" />
             <Background />
 
             <Hero>

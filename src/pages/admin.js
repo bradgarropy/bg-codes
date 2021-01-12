@@ -39,7 +39,6 @@ const Button = styled.button`
 
 const AdminPage = () => {
     const authCtx = useAuth()
-    console.log(authCtx.user)
     const streamCtx = useStream()
     const [stream, setStream] = useState({title: "", guest: ""})
 

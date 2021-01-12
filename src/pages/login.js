@@ -2,9 +2,8 @@ import "firebaseui/dist/firebaseui.css"
 
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
-import * as firebaseui from "firebaseui"
+import {useFirebaseUI} from "hooks"
 import styled from "styled-components"
-import firebase from "utils/firebase"
 
 const Login = styled.form`
     width: 100%;
@@ -17,13 +16,7 @@ const Login = styled.form`
 `
 
 const LoginPage = () => {
-    const uiConfig = {
-        signInSuccessUrl: "/admin",
-        signInOptions: [firebase.auth.GithubAuthProvider.PROVIDER_ID],
-    }
-
-    const ui = new firebaseui.auth.AuthUI(firebase.auth())
-    ui.start("#firebaseui-auth-container", uiConfig)
+    useFirebaseUI()
 
     return (
         <>

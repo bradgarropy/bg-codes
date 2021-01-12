@@ -1,5 +1,6 @@
 // eslint-disable-next-line simple-import-sort/imports
 import firebase from "firebase/app"
+import "firebase/auth"
 import "firebase/firestore"
 
 const config = {
@@ -13,6 +14,7 @@ const config = {
 
 if (typeof window !== "undefined" && !firebase.apps.length) {
     firebase.initializeApp(config)
+    firebase.auth()
     firebase.firestore()
 }
 

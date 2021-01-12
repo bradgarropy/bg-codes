@@ -13,13 +13,26 @@ const StreamProvider = ({children}) => {
 
     const readStream = async () => {
         const snapshot = await firebase.firestore().collection("streams").get()
-        const stream = snapshot.docs[0].data()
+        const doc = snapshot.docs[0]
+
+        const stream = {
+            id: doc.id,
+            ...doc.data(),
+        }
 
         setStream(stream)
+        return stream
+    }
+
+    const updateStream = async (id, updates) => {
+        delete updates.id
+        firebase.firestore().collection("streams").doc(id).update(updates)
     }
 
     const context = {
         stream,
+        readStream,
+        updateStream,
     }
 
     return (

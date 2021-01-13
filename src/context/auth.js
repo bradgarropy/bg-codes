@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import {createContext, useState} from "react"
+import {createContext, useEffect, useState} from "react"
 import firebase from "utils/firebase"
 
 const AuthContext = createContext()
@@ -7,9 +7,11 @@ const AuthContext = createContext()
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState()
 
-    firebase.auth().onAuthStateChanged(user => {
-        setUser(user)
-    })
+    useEffect(() => {
+        firebase.auth().onAuthStateChanged(user => {
+            setUser(user)
+        })
+    }, [])
 
     const context = {
         user,

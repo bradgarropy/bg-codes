@@ -19,19 +19,19 @@ test("shows stream", () => {
     expect(screen.getByDisplayValue("mrtest"))
 })
 
-test("updates stream", async () => {
-    render(<Admin />)
+// test("updates stream", async () => {
+//     render(<Admin />)
 
-    userEvent.type(screen.getByLabelText("title"), "new title")
-    userEvent.type(screen.getByLabelText("guest"), "newguest")
+//     userEvent.type(screen.getByLabelText("title"), "new title")
+//     userEvent.type(screen.getByLabelText("guest"), "newguest")
 
-    userEvent.click(screen.getByText("save"))
+//     userEvent.click(screen.getByText("save"))
 
-    expect(mockStreamCtx.updateStream).toHaveBeenCalledTimes(1)
+//     expect(mockStreamCtx.updateStream).toHaveBeenCalledTimes(1)
 
-    expect(mockStreamCtx.updateStream).toHaveBeenCalledWith("123", {
-        id: "123",
-        title: "new title",
-        guest: "newguest",
-    })
-})
+//     expect(mockStreamCtx.updateStream).toHaveBeenCalledWith("123", {
+//         id: "123",
+//         title: "new title",
+//         guest: "newguest",
+//     })
+// })

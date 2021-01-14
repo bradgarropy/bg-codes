@@ -1,3 +1,5 @@
+import "firebaseui/dist/firebaseui.css"
+
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Admin from "components/Admin"
 import Background from "components/Background"
@@ -13,12 +15,13 @@ const AdminPage = () => {
 
             <Background />
 
-            {authCtx.user !== undefined &&
-            authCtx.user?.email !== "bradgarropy@gmail.com" ? (
-                <Login />
-            ) : (
-                <Admin />
-            )}
+            {authCtx.user?.email === undefined && <Login />}
+
+            {authCtx.user?.email !== undefined &&
+                authCtx.user.email !== "bradgarropy@gmail.com" && <Login />}
+
+            {authCtx.user?.email !== undefined &&
+                authCtx.user.email === "bradgarropy@gmail.com" && <Admin />}
         </>
     )
 }

@@ -14,7 +14,7 @@ const StyledLogin = styled.form`
 const Login = () => {
     useFirebaseUI()
 
-    return <StyledLogin id="firebaseui-auth-container"></StyledLogin>
+    return <StyledLogin id="firebaseui" data-testid="firebaseui"></StyledLogin>
 }
 
 export default Login

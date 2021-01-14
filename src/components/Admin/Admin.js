@@ -78,6 +78,7 @@ const Admin = () => {
                 <Input
                     type="text"
                     name="guest"
+                    id="guest"
                     value={stream?.guest}
                     onChange={onChange}
                 />

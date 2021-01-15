@@ -38,7 +38,7 @@ const Button = styled.button`
 
 const Admin = () => {
     const streamCtx = useStream()
-    const [stream, setStream] = useState({title: "", guest: ""})
+    const [stream, setStream] = useState(streamCtx.stream)
 
     useEffect(() => {
         if (streamCtx.stream) {
@@ -47,10 +47,9 @@ const Admin = () => {
     }, [streamCtx])
 
     const onChange = event => {
-        setStream(stream => ({
-            ...stream,
-            [event.target.name]: event.target.value,
-        }))
+        const newStream = Object.assign({}, stream)
+        newStream[event.target.name] = event.target.value
+        setStream(newStream)
     }
 
     const onSubmit = event => {
@@ -67,7 +66,7 @@ const Admin = () => {
                     type="text"
                     name="title"
                     id="title"
-                    value={stream?.title}
+                    value={stream?.title ?? ""}
                     onChange={onChange}
                 />
             </FormField>
@@ -79,7 +78,7 @@ const Admin = () => {
                     type="text"
                     name="guest"
                     id="guest"
-                    value={stream?.guest}
+                    value={stream?.guest ?? ""}
                     onChange={onChange}
                 />
             </FormField>

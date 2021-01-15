@@ -38,6 +38,7 @@ const Button = styled.button`
 
 const Admin = () => {
     const streamCtx = useStream()
+    const [isLoading, setIsLoading] = useState(false)
     const [stream, setStream] = useState(streamCtx.stream)
 
     useEffect(() => {
@@ -52,9 +53,12 @@ const Admin = () => {
         setStream(newStream)
     }
 
-    const onSubmit = event => {
+    const onSubmit = async event => {
         event.preventDefault()
-        streamCtx.updateStream(streamCtx.stream.id, stream)
+
+        setIsLoading(true)
+        await streamCtx.updateStream(streamCtx.stream.id, stream)
+        setIsLoading(false)
     }
 
     return (
@@ -82,7 +86,8 @@ const Admin = () => {
                     onChange={onChange}
                 />
             </FormField>
-            <Button>save</Button>
+
+            <Button>{isLoading ? "saving..." : "save"}</Button>
         </Form>
     )
 }

@@ -26,7 +26,14 @@ const StreamProvider = ({children}) => {
 
     const updateStream = async (id, updates) => {
         delete updates.id
-        firebase.firestore().collection("streams").doc(id).update(updates)
+
+        const promise = await firebase
+            .firestore()
+            .collection("streams")
+            .doc(id)
+            .update(updates)
+
+        return promise
     }
 
     const context = {

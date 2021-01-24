@@ -7,7 +7,7 @@ const StyledHandle = styled.div`
     padding: 1.2rem 2.4rem;
 `
 
-const Handle = ({handle = "bradgarropy", ...props}) => {
+const Handle = ({handle = "", ...props}) => {
     const mention = `@${handle}`
     return <StyledHandle {...props}>{mention}</StyledHandle>
 }

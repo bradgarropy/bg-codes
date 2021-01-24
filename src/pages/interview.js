@@ -52,7 +52,7 @@ const InterviewPage = () => {
 
             <Videos>
                 <HostVideo width="42.1875vw" />
-                <HostHandle />
+                <HostHandle handle="bradgarropy" />
 
                 <GuestVideo width="42.1875vw" />
                 <GuestHandle handle={stream?.guest} />

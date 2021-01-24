@@ -46,7 +46,7 @@ const PairingPage = () => {
             </GuestVideo>
 
             <HostVideo width="31.25vw">
-                <StyledHandle />
+                <StyledHandle handle="bradgarropy" />
             </HostVideo>
 
             <BottomBar />

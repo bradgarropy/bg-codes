@@ -24,14 +24,6 @@ module.exports = {
             resolve: "gatsby-plugin-react-helmet",
         },
         {
-            resolve: "gatsby-plugin-web-font-loader",
-            options: {
-                google: {
-                    families: ["Montserrat:800"],
-                },
-            },
-        },
-        {
             resolve: "gatsby-plugin-styled-components",
         },
         {

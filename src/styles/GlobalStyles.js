@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: "Montserrat";
         font-style: normal;
         font-weight: 800;
-        src: url("montserrat-black.otf") format("opentype")
+        src: url("/montserrat-black.otf") format("opentype")
     }
 
     html {

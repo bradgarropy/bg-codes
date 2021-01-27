@@ -1,4 +1,4 @@
-import {useCountdown} from "hooks"
+import useCountdown from "@bradgarropy/use-countdown"
 import styled from "styled-components"
 
 const Timer = styled.span`

@@ -11,11 +11,7 @@ const Timer = styled.span`
 
 const Countdown = props => {
     const countdown = useCountdown({minutes: 5})
-    const minutes = countdown.minutes.toString().padStart(2, 0)
-    const seconds = countdown.seconds.toString().padStart(2, 0)
-    const timer = `${minutes}:${seconds}`
-
-    return <Timer {...props}>{timer}</Timer>
+    return <Timer {...props}>{countdown.formatted}</Timer>
 }
 
 export default Countdown

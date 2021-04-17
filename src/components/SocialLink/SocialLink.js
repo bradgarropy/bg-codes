@@ -1,8 +1,9 @@
+import Link from "@bradgarropy/gatsby-link"
 import Icon from "components/Icon"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-const SocialLinkWrapper = styled.a`
+const SocialLinkWrapper = styled(Link)`
     height: 40px;
     color: ${({theme}) => theme.colors.black};
     transition: all 300ms ease-out;
@@ -14,11 +15,7 @@ const SocialLinkWrapper = styled.a`
 
 const SocialLink = ({platform}) => {
     return (
-        <SocialLinkWrapper
-            href={`https://${platform}.com/bradgarropy`}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
+        <SocialLinkWrapper to={`https://${platform}.com/bradgarropy`}>
             <Icon icon={platform} />
         </SocialLinkWrapper>
     )

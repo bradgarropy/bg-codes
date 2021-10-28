@@ -11,12 +11,19 @@ const BottomBarWrapper = styled.div`
     box-shadow: 0 0 20px 0 ${({theme}) => theme.colors.shadow};
     display: grid;
     align-content: center;
+    grid-auto-flow: column;
+    justify-content: space-between;
+`
+
+const Donate = styled.span`
+    font-size: 3.2rem;
 `
 
 const BottomBar = () => {
     return (
         <BottomBarWrapper>
             <Socials />
+            <Donate>!extralife</Donate>
         </BottomBarWrapper>
     )
 }

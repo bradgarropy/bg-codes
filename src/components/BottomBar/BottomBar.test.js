@@ -16,8 +16,8 @@ test("shows handle", () => {
     expect(screen.getByText("@bradgarropy"))
 })
 
-test("shows command", () => {
-    render(<BottomBar />)
+// test("shows command", () => {
+//     render(<BottomBar />)
 
-    expect(screen.getByText("!extralife"))
-})
+//     expect(screen.getByText("!extralife"))
+// })

@@ -15,15 +15,15 @@ const BottomBarWrapper = styled.div`
     justify-content: space-between;
 `
 
-const Donate = styled.span`
-    font-size: 3.2rem;
-`
+// const Donate = styled.span`
+//     font-size: 3.2rem;
+// `
 
 const BottomBar = () => {
     return (
         <BottomBarWrapper>
             <Socials />
-            <Donate>!extralife</Donate>
+            {/* <Donate>!extralife</Donate> */}
         </BottomBarWrapper>
     )
 }

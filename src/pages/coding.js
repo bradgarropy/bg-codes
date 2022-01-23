@@ -6,7 +6,7 @@ import styled from "styled-components"
 const HostVideo = styled(Video)`
     position: absolute;
     right: 0;
-    bottom: 5rem;
+    bottom: 6rem;
     border-right: none;
     border-bottom: none;
     clip-path: inset(-20px 0px 0px -20px);

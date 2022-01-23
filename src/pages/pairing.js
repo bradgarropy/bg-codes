@@ -9,7 +9,7 @@ import styled from "styled-components"
 const GuestVideo = styled(Video)`
     position: absolute;
     right: 0;
-    bottom: 5rem;
+    bottom: 6rem;
     transform: translateY(-100%);
     border-right: none;
     border-bottom: none;
@@ -21,7 +21,7 @@ const GuestVideo = styled(Video)`
 const HostVideo = styled(Video)`
     position: absolute;
     right: 0;
-    bottom: 5rem;
+    bottom: 6rem;
     border-right: none;
     border-bottom: none;
     clip-path: inset(0px 0px 0px -20px);

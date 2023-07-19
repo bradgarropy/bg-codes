@@ -10,7 +10,7 @@ const Timer = styled.span`
 `
 
 const Countdown = props => {
-    const countdown = useCountdown({minutes: 5})
+    const countdown = useCountdown({minutes: 5, autoStart: true})
     return <Timer {...props}>{countdown.formatted}</Timer>
 }
 

@@ -1,6 +1,6 @@
 {
     "name": "bg-codes",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "🎥 bg codes twitch overlay",
     "keywords": [
         "gatsby",
@@ -40,7 +40,7 @@
     "dependencies": {
         "@bradgarropy/gatsby-link": "^1.0.3",
         "@bradgarropy/gatsby-plugin-seo": "^2.2.0",
-        "@bradgarropy/use-countdown": "^1.4.1",
+        "@bradgarropy/use-countdown": "^2.0.0",
         "dotenv": "^10.0.0",
         "firebase": "^8.2.2",
         "firebaseui": "^4.7.1",

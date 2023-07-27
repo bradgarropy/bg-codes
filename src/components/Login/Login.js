@@ -1,20 +1,15 @@
 import {useFirebaseUI} from "hooks"
-import styled from "styled-components"
-
-const StyledLogin = styled.form`
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    row-gap: 3rem;
-    font-size: 3rem;
-`
 
 const Login = () => {
     useFirebaseUI()
 
-    return <StyledLogin id="firebaseui" data-testid="firebaseui"></StyledLogin>
+    return (
+        <form
+            className="w-full h-full grid justify-center content-center gap-y-12 text-5xl"
+            id="firebaseui"
+            data-testid="firebaseui"
+        ></form>
+    )
 }
 
 export default Login

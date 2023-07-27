@@ -1,13 +1,8 @@
 import PropTypes from "prop-types"
-import styled from "styled-components"
 import Github from "svg/github.svg"
 import Instagram from "svg/instagram.svg"
 import Twitter from "svg/twitter.svg"
 import Youtube from "svg/youtube.svg"
-
-const IconWrapper = styled.span`
-    height: 40px;
-`
 
 const Icon = ({icon}) => {
     let component
@@ -30,7 +25,11 @@ const Icon = ({icon}) => {
             break
     }
 
-    return <IconWrapper aria-label={icon}>{component}</IconWrapper>
+    return (
+        <span className="h-10" aria-label={icon}>
+            {component}
+        </span>
+    )
 }
 
 Icon.propTypes = {

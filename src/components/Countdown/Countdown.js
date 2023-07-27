@@ -1,4 +1,5 @@
 import useCountdown from "@bradgarropy/use-countdown"
+import PropTypes from "prop-types"
 
 const Countdown = props => {
     const countdown = useCountdown({minutes: 5, autoStart: true})
@@ -9,6 +10,10 @@ const Countdown = props => {
             {countdown.formatted}
         </span>
     )
+}
+
+Countdown.propTypes = {
+    className: PropTypes.string,
 }
 
 export default Countdown

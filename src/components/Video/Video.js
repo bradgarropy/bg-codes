@@ -13,7 +13,7 @@ const Video = ({size = "big", className, children}) => {
 }
 
 Video.propTypes = {
-    size: PropTypes.oneOf("big", "small"),
+    size: PropTypes.oneOf(["big", "small"]),
     className: PropTypes.string,
     children: PropTypes.node,
 }

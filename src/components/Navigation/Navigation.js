@@ -36,18 +36,6 @@ const Navigation = () => {
             >
                 coding
             </Link>
-            <Link
-                className="text-[4rem] no-underline text-black hover:underline"
-                to="/interview"
-            >
-                interview
-            </Link>
-            <Link
-                className="text-[4rem] no-underline text-black hover:underline"
-                to="/pairing"
-            >
-                pairing
-            </Link>
         </nav>
     )
 }

@@ -5,7 +5,6 @@ const SharingPage = () => {
     return (
         <>
             <SEO title="🎥 bg codes twitch overlay" description="" />
-
             <BottomBar />
         </>
     )

@@ -1,5 +1,5 @@
 import SocialBar from "components/SocialBar"
-import {render, screen} from "test-utils/render"
+import {render, screen} from "@testing-library/react"
 
 const socials = ["github", "instagram", "twitter", "youtube"]
 

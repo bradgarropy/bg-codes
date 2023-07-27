@@ -1,5 +1,5 @@
 import Handle from "components/Handle"
-import {render, screen} from "test-utils/render"
+import {render, screen} from "@testing-library/react"
 
 test("shows host", () => {
     render(<Handle handle="bradgarropy" />)

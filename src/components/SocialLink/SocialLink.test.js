@@ -1,5 +1,5 @@
 import SocialLink from "components/SocialLink"
-import {render, screen} from "test-utils/render"
+import {render, screen} from "@testing-library/react"
 
 const platforms = ["github", "instagram", "twitter", "youtube"]
 

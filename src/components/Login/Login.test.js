@@ -1,6 +1,6 @@
 import Login from "components/Login"
 import {useFirebaseUI} from "hooks"
-import {render, screen} from "test-utils/render"
+import {render, screen} from "@testing-library/react"
 
 jest.mock("hooks")
 useFirebaseUI.mockReturnValue(null)

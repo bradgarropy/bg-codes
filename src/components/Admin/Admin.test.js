@@ -1,7 +1,7 @@
+import {render, screen} from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import Admin from "components/Admin"
 import {useStream} from "hooks"
-import {render, screen} from "test-utils/render"
 
 jest.mock("hooks")
 

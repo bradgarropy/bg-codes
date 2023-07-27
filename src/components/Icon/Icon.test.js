@@ -1,5 +1,5 @@
 import Icon from "components/Icon"
-import {render, screen} from "test-utils/render"
+import {render, screen} from "@testing-library/react"
 
 const icons = ["github", "instagram", "twitter", "youtube"]
 

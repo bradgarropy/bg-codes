@@ -1,7 +1,3 @@
-import colors from "styles/colors"
-
-const theme = {
-    colors,
-}
+const theme = {}
 
 export default theme

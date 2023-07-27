@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors")
+
 /** @type {import('tailwindcss').Config} */
 
 const config = {
@@ -6,7 +8,16 @@ const config = {
         "./src/components/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-        extend: {},
+        colors: {
+            black: colors.black,
+            white: colors.white,
+            purple: colors.purple,
+        },
+        extend: {
+            boxShadow: {
+                DEFAULT: "0px 0px 20px 0px rgba(0,0,0,0.2)",
+            },
+        },
     },
     plugins: [],
 }

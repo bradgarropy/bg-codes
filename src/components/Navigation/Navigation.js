@@ -1,43 +1,42 @@
 import Link from "@bradgarropy/gatsby-link"
-import styled from "styled-components"
-
-const StyledNavigation = styled.nav`
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 2.5rem;
-    padding: 5rem 10rem;
-    transition: all 100ms ease-out;
-    transform: translateY(-10rem);
-
-    &:hover {
-        transform: translateY(0rem);
-    }
-`
-
-const NavigationLink = styled(Link)`
-    font-size: 4rem;
-    text-decoration: none;
-    color: ${({theme}) => theme.colors.black};
-
-    &:hover {
-        text-decoration: underline;
-    }
-`
 
 const Navigation = () => {
     return (
-        <StyledNavigation role="navigation">
-            <NavigationLink to="/brb">brb</NavigationLink>
-            <NavigationLink to="/countdown">countdown</NavigationLink>
-            <NavigationLink to="/talking">talking</NavigationLink>
-            <NavigationLink to="/sharing">sharing</NavigationLink>
-            <NavigationLink to="/coding">coding</NavigationLink>
-            <NavigationLink to="/interview">interview</NavigationLink>
-            <NavigationLink to="/pairing">pairing</NavigationLink>
-        </StyledNavigation>
+        <nav
+            className="absolute top-0 left-0 grid grid-flow-col gap-x-10 py-20 px-40 transition-transform ease-out duration-100 -translate-y-40 hover:translate-y-0"
+            role="navigation"
+        >
+            <Link
+                className="text-[4rem] no-underline text-black hover:underline"
+                to="/brb"
+            >
+                brb
+            </Link>
+            <Link
+                className="text-[4rem] no-underline text-black hover:underline"
+                to="/countdown"
+            >
+                countdown
+            </Link>
+            <Link
+                className="text-[4rem] no-underline text-black hover:underline"
+                to="/talking"
+            >
+                talking
+            </Link>
+            <Link
+                className="text-[4rem] no-underline text-black hover:underline"
+                to="/sharing"
+            >
+                sharing
+            </Link>
+            <Link
+                className="text-[4rem] no-underline text-black hover:underline"
+                to="/coding"
+            >
+                coding
+            </Link>
+        </nav>
     )
 }
 

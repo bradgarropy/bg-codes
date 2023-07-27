@@ -1,7 +1,7 @@
+import {render, screen} from "@testing-library/react"
 import Navigation from "components/Navigation"
-import {render, screen} from "test-utils/render"
 
-const links = ["brb", "talking", "sharing", "coding", "interview", "pairing"]
+const links = ["brb", "talking", "sharing", "coding"]
 
 test("shows navigation", () => {
     render(<Navigation />)

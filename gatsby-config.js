@@ -10,10 +10,9 @@ module.exports = {
         keywords: [
             "gatsby",
             "react",
-            "styled-components",
+            "tailwind",
             "prettier",
             "eslint",
-            "firebase",
             "twitch",
         ],
         email: "bradgarropy@gmail.com",
@@ -22,9 +21,6 @@ module.exports = {
     plugins: [
         {
             resolve: "gatsby-plugin-react-helmet",
-        },
-        {
-            resolve: "gatsby-plugin-styled-components",
         },
         {
             resolve: "gatsby-plugin-layout",
@@ -45,6 +41,9 @@ module.exports = {
         },
         {
             resolve: "@bradgarropy/gatsby-plugin-seo",
+        },
+        {
+            resolve: "gatsby-plugin-postcss",
         },
     ],
 }

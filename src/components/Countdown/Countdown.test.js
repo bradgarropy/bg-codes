@@ -1,5 +1,5 @@
+import {render, screen} from "@testing-library/react"
 import Countdown from "components/Countdown"
-import {render, screen} from "test-utils/render"
 
 test("shows countdown", () => {
     render(<Countdown />)

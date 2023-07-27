@@ -1,14 +1,13 @@
 {
     "name": "bg-codes",
-    "version": "1.2.5",
+    "version": "1.3.0",
     "description": "🎥 bg codes twitch overlay",
     "keywords": [
         "gatsby",
         "react",
-        "styled-components",
+        "tailwind",
         "prettier",
         "eslint",
-        "firebase",
         "twitch"
     ],
     "homepage": "https://bg-codes.netlify.app",
@@ -42,18 +41,14 @@
         "@bradgarropy/gatsby-plugin-seo": "^2.2.0",
         "@bradgarropy/use-countdown": "^2.0.0",
         "dotenv": "^10.0.0",
-        "firebase": "^8.2.2",
-        "firebaseui": "^4.7.1",
         "gatsby": "^4.0.1",
         "gatsby-plugin-catch-links": "^4.0.0",
         "gatsby-plugin-layout": "^3.0.0",
         "gatsby-plugin-react-helmet": "^5.0.0",
         "gatsby-plugin-react-svg": "^3.0.0",
-        "gatsby-plugin-styled-components": "^5.0.0",
         "modern-normalize": "^1.0.0",
         "react-dom": "^17.0.1",
-        "react-helmet": "^6.1.0",
-        "styled-components": "^5.2.1"
+        "react-helmet": "^6.1.0"
     },
     "devDependencies": {
         "@babel/eslint-parser": "^7.16.3",
@@ -69,20 +64,22 @@
         "@testing-library/jest-dom": "^5.11.6",
         "@testing-library/react": "^12.1.2",
         "@testing-library/user-event": "^13.1.3",
+        "autoprefixer": "^10.4.14",
         "babel-jest": "^27.3.1",
-        "babel-plugin-styled-components": "^2.0.2",
         "eslint": "^7.16.0",
         "eslint-config-prettier": "^7.1.0",
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.2.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
+        "gatsby-plugin-postcss": "^6.11.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.3.1",
-        "jest-styled-components": "^7.0.3",
         "plop": "^2.7.4",
+        "postcss": "^8.4.27",
         "prettier": "^2.2.1",
         "react": "^17.0.1",
-        "regenerator-runtime": "^0.13.7"
+        "regenerator-runtime": "^0.13.7",
+        "tailwindcss": "^3.3.3"
     }
 }

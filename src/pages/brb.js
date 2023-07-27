@@ -1,23 +1,5 @@
 import SEO from "@bradgarropy/gatsby-plugin-seo"
 import Background from "components/Background"
-import styled from "styled-components"
-
-const Hero = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    justify-items: center;
-`
-
-const Tagline = styled.span`
-    text-transform: uppercase;
-    font-size: 12.5rem;
-    background-color: ${({theme}) => theme.colors.white};
-    padding: 0 4rem;
-    transform: skew(-3deg, -3deg);
-`
 
 const BRBPage = () => {
     return (
@@ -26,10 +8,12 @@ const BRBPage = () => {
 
             <Background />
 
-            <Hero>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid justify-items-center">
                 <img src="/bg.png" alt="bg" />
-                <Tagline>codes</Tagline>
-            </Hero>
+                <span className="uppercase text-[12.5rem] bg-white px-16 -skew-x-3 -skew-y-3">
+                    codes
+                </span>
+            </div>
         </>
     )
 }

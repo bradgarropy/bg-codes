@@ -1,5 +1,5 @@
+import {render, screen} from "@testing-library/react"
 import Socials from "components/Socials"
-import {render, screen} from "test-utils/render"
 
 const socials = ["github", "instagram", "twitter", "youtube"]
 

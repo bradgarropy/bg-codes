@@ -10,7 +10,7 @@ module.exports = {
         keywords: [
             "gatsby",
             "react",
-            "styled-components",
+            "tailwind",
             "prettier",
             "eslint",
             "firebase",
@@ -22,9 +22,6 @@ module.exports = {
     plugins: [
         {
             resolve: "gatsby-plugin-react-helmet",
-        },
-        {
-            resolve: "gatsby-plugin-styled-components",
         },
         {
             resolve: "gatsby-plugin-layout",

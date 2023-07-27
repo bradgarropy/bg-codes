@@ -1,40 +1,5 @@
 import {useStream} from "hooks"
 import {useEffect, useState} from "react"
-import styled from "styled-components"
-
-const Form = styled.form`
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    row-gap: 3rem;
-    font-size: 3rem;
-`
-
-const FormField = styled.div`
-    display: grid;
-    row-gap: 1rem;
-`
-
-const Label = styled.label`
-    color: ${({theme}) => theme.colors.white};
-    text-shadow: 2px 2px 0px ${({theme}) => theme.colors.black};
-`
-
-const Input = styled.input`
-    padding: 1rem 2rem;
-    border: none;
-    border: 0.2rem solid ${({theme}) => theme.colors.black};
-`
-
-const Button = styled.button`
-    padding: 1rem;
-    background-color: ${({theme}) => theme.colors.white};
-    border: 0.4rem solid ${({theme}) => theme.colors.black};
-    margin-top: 5rem;
-    cursor: pointer;
-`
 
 const Admin = () => {
     const streamCtx = useStream()
@@ -62,33 +27,49 @@ const Admin = () => {
     }
 
     return (
-        <Form onSubmit={onSubmit}>
-            <FormField>
-                <Label htmlFor="title">title</Label>
+        <form
+            onSubmit={onSubmit}
+            className="w-full h-full grid justify-center content-center gap-y-12 text-5xl"
+        >
+            <div className="grid gap-y-4">
+                <label
+                    className="text-white drop-shadow-[2px_2px_0px_black]"
+                    htmlFor="title"
+                >
+                    title
+                </label>
 
-                <Input
+                <input
+                    className="py-4 px-8 border-2 border-black"
                     type="text"
                     name="title"
                     id="title"
                     value={stream?.title ?? ""}
                     onChange={onChange}
                 />
-            </FormField>
+            </div>
+            <div className="grid gap-y-4">
+                <label
+                    className="text-white drop-shadow-[2px_2px_0px_black]"
+                    htmlFor="guest"
+                >
+                    guest
+                </label>
 
-            <FormField>
-                <Label htmlFor="guest">guest</Label>
-
-                <Input
+                <input
+                    className="py-4 px-8 border-2 border-black"
                     type="text"
                     name="guest"
                     id="guest"
                     value={stream?.guest ?? ""}
                     onChange={onChange}
                 />
-            </FormField>
+            </div>
 
-            <Button>{isLoading ? "saving..." : "save"}</Button>
-        </Form>
+            <button className="p-4 bg-white border-4 border-black mt-20 cursor-pointer">
+                {isLoading ? "saving..." : "save"}
+            </button>
+        </form>
     )
 }
 

@@ -13,7 +13,6 @@ module.exports = {
             "tailwind",
             "prettier",
             "eslint",
-            "firebase",
             "twitch",
         ],
         email: "bradgarropy@gmail.com",

@@ -1,5 +1,5 @@
-import BottomBar from "components/BottomBar"
 import {render, screen} from "@testing-library/react"
+import BottomBar from "components/BottomBar"
 
 test("shows social links", () => {
     render(<BottomBar />)

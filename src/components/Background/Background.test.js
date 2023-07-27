@@ -1,5 +1,5 @@
-import Background from "components/Background"
 import {render, screen} from "@testing-library/react"
+import Background from "components/Background"
 
 test("shows background", () => {
     render(<Background />)

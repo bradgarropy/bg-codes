@@ -5,7 +5,6 @@ import Navigation from "components/Navigation"
 import {AuthProvider, StreamProvider} from "context"
 import PropTypes from "prop-types"
 import {ThemeProvider} from "styled-components"
-import GlobalStyles from "styles/GlobalStyles"
 import theme from "styles/theme"
 
 const Layout = ({children}) => (
@@ -13,7 +12,6 @@ const Layout = ({children}) => (
         <AuthProvider>
             <StreamProvider>
                 <div className="h-screen w-screen">
-                    <GlobalStyles />
                     <Navigation />
                     {children}
                 </div>

@@ -37,11 +37,6 @@ const StartingSoon = styled.div`
     }
 `
 
-const CountdownBar = styled(Countdown)`
-    margin-left: 11rem;
-    width: calc(100% - 11rem);
-`
-
 const CountdownPage = () => {
     return (
         <>
@@ -57,7 +52,7 @@ const CountdownPage = () => {
 
                 <StartingSoon>
                     <h1>starting soon</h1>
-                    <CountdownBar />
+                    <Countdown className="ml-44 w-[calc(100%-11rem)]" />
                 </StartingSoon>
             </ContentWrapper>
         </>

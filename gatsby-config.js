@@ -46,5 +46,8 @@ module.exports = {
         {
             resolve: "@bradgarropy/gatsby-plugin-seo",
         },
+        {
+            resolve: "gatsby-plugin-postcss",
+        },
     ],
 }

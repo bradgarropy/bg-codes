@@ -39,7 +39,7 @@
     "dependencies": {
         "@bradgarropy/gatsby-link": "^1.0.3",
         "@bradgarropy/gatsby-plugin-seo": "^2.2.0",
-        "@bradgarropy/use-countdown": "^2.0.0",
+        "@bradgarropy/use-countdown": "^2.0.1",
         "dotenv": "^10.0.0",
         "gatsby": "^4.0.1",
         "gatsby-plugin-catch-links": "^4.0.0",
